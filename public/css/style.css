@@ -1,0 +1,142 @@
+body,
+main {
+  min-height: 100vh;
+}
+
+.bi {
+  display: inline-block;
+  margin-right: .7rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: white;
+}
+
+svg{
+  cursor: pointer;
+}
+
+i{
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  font-size: 1em;
+  color: black !important;
+  cursor: pointer;
+}
+
+.bi-search {
+  display: inline-block;
+  margin-right: .7rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.category a, .list-group-item a, .album a{
+  text-decoration: none;
+}
+
+.category a, .list-group-item a, .icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  transition: .5s;
+}
+
+.album a{
+  color: black;
+}
+
+.category a:hover {
+  color: black;
+  border-color: black !important;
+  cursor: pointer;
+}
+
+.category::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Sidebar
+ */
+
+/* @media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+}*/
+
+header a {
+  text-decoration: none;
+}
+
+.navbar-search {
+  display: inline !important;
+}
+
+.sidebar .nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:active,
+.sidebar .nav-link:focus {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .5rem 1rem;
+}
+
+.sidebar .nav-item .nav-link {
+  color: rgba(255, 255, 255, .8);
+}
+
+@media(max-width: 540px) {
+  .home-image {
+    height: 50vh;
+  }
+}
+
+@media(max-width: 1024px) {
+  .post-image {
+    height: 50vh !important;
+  }
+}
+
+.home-image {
+  height: 70vh;
+  background-image: url('/image.jpg');
+}
+
+textarea::-webkit-scrollbar, .detail-post::-webkit-scrollbar{
+  display: none;
+}
+
+.my-media{
+  display: block;
+  width: 200px; 
+  height: 200px;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
